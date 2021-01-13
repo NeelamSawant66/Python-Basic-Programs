@@ -20,4 +20,24 @@ def work():
         print(f"The Square root of {SqRoot} is {ans}")
     elif option==4:
         CuRoot = float(input("Enter the value for calculating Cube Root : "))
-        ans =
+        ans = CuRoot **(1/3)
+        print(f"The Cube Root of {CuRoot} is {ans}.")
+        ask()
+    else:
+        print("Invalid Input!!!, Try Again")
+        work()
+
+work()
+def ask():
+    print("1. Contiune"
+          "2. Exit")
+    option = int(input("Do You Want to find any other area calculations"))
+    if option ==1:
+        work()
+    elif option==2 :
+        print("Thank You!!!")
+    else:
+        print("Invalid Input!!!, try Again")
+        ask()
+
+ask()
